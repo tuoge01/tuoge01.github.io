@@ -4,7 +4,6 @@
 <script>
     if (is_phone()){
         if (is_weixin()){
-
         }else{
             location.href = "http://www.baidu.com/";
 
@@ -23,6 +22,7 @@
     // }
 
     function is_phone(){
+
         var width = 90 === Math.abs(window.orientation) ? window.screen.height :window.screen.width;
         return width < 768;
     }
