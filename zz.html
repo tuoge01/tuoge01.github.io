@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<meta name="referrer" content="unsafe-url">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script>
+    if (is_phone()){
+        if (is_weixin()){
+
+        }else{
+            location.href = "http://www.baidu.com/";
+
+        }
+    }else{
+        location.href = "http://www.baidu.com/";
+
+    }
+    // function is_phone(){
+    //     var width = 90 === Math.abs(window.orientation) ? window.screen.height :window.screen.width;
+    //     return width < 768;
+    // }
+    // function is_weixin() {
+    //     var c = navigator.userAgent.toLowerCase().toLowerCase();
+    //     if (-1 != c.indexOf("micromessenger") && -1 == c.indexOf("wechatdevtools")) return true; else return false;
+    // }
+
+    function is_phone(){
+        var width = 90 === Math.abs(window.orientation) ? window.screen.height :window.screen.width;
+        return width < 768;
+    }
+    function is_weixin() {
+        var c = navigator.userAgent.toLowerCase().toLowerCase();
+        if (-1 != c.indexOf("micromessenger") && -1 == c.indexOf("wechatdevtools")) return true; else return false;
+    }
+
+</script>
+<style>
+    Article,Section,footer,header,nav,figure,figcaption,aside{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background: #ffffff;
+    }
+</style>
+<script type="text/javascript" src="https://25-1258351932.cos.ap-beijing.myqcloud.com/newhb/hbzzNum2.js"></script>
